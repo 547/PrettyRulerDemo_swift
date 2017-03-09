@@ -1,0 +1,6 @@
+framework module TXHRrettyRuler {
+  umbrella header "TXHRrettyRuler.h"
+
+  export *
+  module * { export * }
+}

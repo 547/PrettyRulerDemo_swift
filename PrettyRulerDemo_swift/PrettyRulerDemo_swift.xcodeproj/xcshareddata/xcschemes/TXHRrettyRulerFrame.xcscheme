@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56DA6FFD1E7149F400F98D88"
-               BuildableName = "TXHRrettyRulerFrame.framework"
+               BuildableName = "TXHRrettyRuler.framework"
                BlueprintName = "TXHRrettyRulerFrame"
                ReferencedContainer = "container:PrettyRulerDemo_swift.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56DA6FFD1E7149F400F98D88"
-            BuildableName = "TXHRrettyRulerFrame.framework"
+            BuildableName = "TXHRrettyRuler.framework"
             BlueprintName = "TXHRrettyRulerFrame"
             ReferencedContainer = "container:PrettyRulerDemo_swift.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56DA6FFD1E7149F400F98D88"
-            BuildableName = "TXHRrettyRulerFrame.framework"
+            BuildableName = "TXHRrettyRuler.framework"
             BlueprintName = "TXHRrettyRulerFrame"
             ReferencedContainer = "container:PrettyRulerDemo_swift.xcodeproj">
          </BuildableReference>
