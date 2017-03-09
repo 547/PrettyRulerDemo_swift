@@ -110,7 +110,7 @@
     CAShapeLayer *shapeLayerArc = [CAShapeLayer layer];
     shapeLayerArc.strokeColor = self.arcColor.CGColor;
     shapeLayerArc.fillColor = [UIColor clearColor].CGColor;
-    shapeLayerArc.lineWidth = 1.f;
+    shapeLayerArc.lineWidth = self.widthOfScales;
     shapeLayerArc.lineCap = kCALineCapButt;
     shapeLayerArc.frame = self.bounds;
     

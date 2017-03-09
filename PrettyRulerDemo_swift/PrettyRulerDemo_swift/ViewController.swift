@@ -12,8 +12,8 @@ class ViewController: UIViewController,TXHRrettyRulerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let ruler = TXHRrettyRuler.init(frame: CGRect.init(x: 20, y: 200, width: UIScreen.main.bounds.width - 20 * 2, height: 50))
-        ruler.arcColor = UIColor.red
+        let ruler = TXHRrettyRuler.init(frame: CGRect.init(x: 20, y: 200, width: UIScreen.main.bounds.width - 20 * 2, height: 40))
+//        ruler.arcColor = UIColor.red
         ruler.textFont = UIFont.systemFont(ofSize: 6.0)
         ruler.widthOfScales = 0.5;
         ruler.rulerDeletate = self;
