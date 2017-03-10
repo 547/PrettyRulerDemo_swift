@@ -1,0 +1,114 @@
+BCSymbolMap Version: 2.0
+-[TXHRrettyRuler initWithFrame:]
+-[TXHRrettyRuler showRulerScrollViewWithCount:average:currentValue:smallMode:type:]
+-[TXHRrettyRuler rulerScrollView]
+-[TXHRrettyRuler scrollViewDidScroll:]
+-[TXHRrettyRuler scrollViewDidEndDecelerating:]
+-[TXHRrettyRuler scrollViewDidEndDragging:willDecelerate:]
+-[TXHRrettyRuler animationRebound:]
+___35-[TXHRrettyRuler animationRebound:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[TXHRrettyRuler drawRacAndLine]
+-[TXHRrettyRuler notRounding:afterPoint:]
+-[TXHRrettyRuler valueIsInteger:]
+-[TXHRrettyRuler distanceLeftAndRight]
+-[TXHRrettyRuler spaceOfScales]
+-[TXHRrettyRuler arcColor]
+-[TXHRrettyRuler textColor]
+-[TXHRrettyRuler textFont]
+-[TXHRrettyRuler integerScaleColor]
+-[TXHRrettyRuler DecimalScaleColor]
+-[TXHRrettyRuler IndicatorColor]
+-[TXHRrettyRuler widthOfScales]
+-[TXHRrettyRuler rulerDeletate]
+-[TXHRrettyRuler setRulerDeletate:]
+-[TXHRrettyRuler setDistanceLeftAndRight:]
+-[TXHRrettyRuler setSpaceOfScales:]
+-[TXHRrettyRuler setWidthOfScales:]
+-[TXHRrettyRuler setArcColor:]
+-[TXHRrettyRuler setTextColor:]
+-[TXHRrettyRuler setTextFont:]
+-[TXHRrettyRuler setIntegerScaleColor:]
+-[TXHRrettyRuler setDecimalScaleColor:]
+-[TXHRrettyRuler setIndicatorColor:]
+-[TXHRrettyRuler .cxx_destruct]
+_OBJC_IVAR_$_TXHRrettyRuler.rulerScrollView
+___block_descriptor_tmp
+_OBJC_IVAR_$_TXHRrettyRuler._distanceLeftAndRight
+_OBJC_IVAR_$_TXHRrettyRuler._spaceOfScales
+_OBJC_IVAR_$_TXHRrettyRuler._arcColor
+_OBJC_IVAR_$_TXHRrettyRuler._textColor
+_OBJC_IVAR_$_TXHRrettyRuler._textFont
+_OBJC_IVAR_$_TXHRrettyRuler._integerScaleColor
+_OBJC_IVAR_$_TXHRrettyRuler._DecimalScaleColor
+_OBJC_IVAR_$_TXHRrettyRuler._IndicatorColor
+_OBJC_IVAR_$_TXHRrettyRuler._widthOfScales
+_OBJC_IVAR_$_TXHRrettyRuler._rulerDeletate
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+/Users/sevenwang/Desktop/SwiftTest/PrettyRulerDemo_swift/PrettyRulerDemo_swift/PrettyRuler/TXHRrettyRuler.m
+/Users/sevenwang/Desktop/SwiftTest/PrettyRulerDemo_swift/PrettyRulerDemo_swift
+/Users/sevenwang/Desktop/SwiftTest/PrettyRulerDemo_swift/PrettyRulerDemo_swift/PrettyRuler/TXHRrettyRuler.h
+__destroy_helper_block_
+__copy_helper_block_
+__35-[TXHRrettyRuler animationRebound:]_block_invoke
+-[TXHRulerScrollView setRulerValue:]
+-[TXHRulerScrollView drawRuler]
+-[TXHRulerScrollView getTextSize]
+-[TXHRulerScrollView distanceLeftAndRight]
+-[TXHRulerScrollView spaceOfScales]
+-[TXHRulerScrollView widthOfScales]
+-[TXHRulerScrollView textColor]
+-[TXHRulerScrollView textFont]
+-[TXHRulerScrollView integerScaleColor]
+-[TXHRulerScrollView DecimalScaleColor]
+-[TXHRulerScrollView rulerCount]
+-[TXHRulerScrollView setRulerCount:]
+-[TXHRulerScrollView rulerAverage]
+-[TXHRulerScrollView setRulerAverage:]
+-[TXHRulerScrollView rulerHeight]
+-[TXHRulerScrollView setRulerHeight:]
+-[TXHRulerScrollView rulerWidth]
+-[TXHRulerScrollView setRulerWidth:]
+-[TXHRulerScrollView rulerValue]
+-[TXHRulerScrollView mode]
+-[TXHRulerScrollView setMode:]
+-[TXHRulerScrollView type]
+-[TXHRulerScrollView setType:]
+-[TXHRulerScrollView setDistanceLeftAndRight:]
+-[TXHRulerScrollView setSpaceOfScales:]
+-[TXHRulerScrollView setWidthOfScales:]
+-[TXHRulerScrollView setTextColor:]
+-[TXHRulerScrollView setTextFont:]
+-[TXHRulerScrollView setIntegerScaleColor:]
+-[TXHRulerScrollView setDecimalScaleColor:]
+-[TXHRulerScrollView .cxx_destruct]
+_OBJC_IVAR_$_TXHRulerScrollView._rulerValue
+_OBJC_IVAR_$_TXHRulerScrollView.textSize
+_OBJC_IVAR_$_TXHRulerScrollView.longest
+_OBJC_IVAR_$_TXHRulerScrollView._mode
+_OBJC_IVAR_$_TXHRulerScrollView._distanceLeftAndRight
+_OBJC_IVAR_$_TXHRulerScrollView._spaceOfScales
+_OBJC_IVAR_$_TXHRulerScrollView._widthOfScales
+_OBJC_IVAR_$_TXHRulerScrollView._textColor
+_OBJC_IVAR_$_TXHRulerScrollView._textFont
+_OBJC_IVAR_$_TXHRulerScrollView._integerScaleColor
+_OBJC_IVAR_$_TXHRulerScrollView._DecimalScaleColor
+_OBJC_IVAR_$_TXHRulerScrollView._rulerCount
+_OBJC_IVAR_$_TXHRulerScrollView._rulerAverage
+_OBJC_IVAR_$_TXHRulerScrollView._rulerHeight
+_OBJC_IVAR_$_TXHRulerScrollView._rulerWidth
+_OBJC_IVAR_$_TXHRulerScrollView._type
+/Users/sevenwang/Desktop/SwiftTest/PrettyRulerDemo_swift/PrettyRulerDemo_swift/PrettyRuler/TXHRulerScrollView.m
+/Users/sevenwang/Desktop/SwiftTest/PrettyRulerDemo_swift/PrettyRulerDemo_swift/PrettyRuler/TXHRulerScrollView.h
+CGSizeMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+CGPointMake
+UIEdgeInsetsMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
+CGRectMake
+/Users/sevenwang/Library/Developer/Xcode/DerivedData/PrettyRulerDemo_swift-buvdlvkqakcettdrovfkwzdlrssv/Build/Intermediates/PrettyRulerDemo_swift.build/Release-iphoneos/TXHRrettyRulerFrame.build/DerivedSources/TXHRrettyRuler_vers.c
