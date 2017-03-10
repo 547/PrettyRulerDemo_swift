@@ -13,6 +13,10 @@
 #define TOPANDHEIGHTRATIO 20 / 100.0 // 刻度顶部距离和ruler 的frame高度比
 #define MEDIUMANDLONGESTRATIO 25 / 33.0 // 中等刻度和最长刻度的比例
 #define SHORTESTANDLONGESTRATIO 17 / 33.0 // 最短刻度和最长刻度的比例
+typedef NS_ENUM(NSInteger, TXHRulerScrollViewType) {
+    TXHRulerScrollViewTypeDefault,
+    TXHRulerScrollViewTypeInt
+};
 @interface TXHRulerScrollView : UIScrollView
 
 @property (nonatomic) NSUInteger rulerCount;
@@ -27,6 +31,7 @@
 
 @property (nonatomic) BOOL mode;
 
+@property (nonatomic,assign) TXHRulerScrollViewType type;
 @property (nonatomic,assign) CGFloat distanceLeftAndRight; //尺子左右距离
 @property (nonatomic,assign) CGFloat spaceOfScales; //刻度之间的距离
 @property (nonatomic,assign) CGFloat widthOfScales; //刻度的宽度

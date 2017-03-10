@@ -40,22 +40,32 @@
         rule.font = self.textFont;
         rule.text = [NSString stringWithFormat:@"%.0f",i * [self.rulerAverage floatValue]];
         textSize = [rule.text sizeWithAttributes:@{ NSFontAttributeName : rule.font }];
-        if (i % 10 == 0) {
+        if (self.type == TXHRulerScrollViewTypeDefault) {
+            if (i % 10 == 0) {
+                CGPathMoveToPoint(pathRef2, NULL, self.distanceLeftAndRight + self.spaceOfScales * i , TOPANDHEIGHTRATIO * self.rulerHeight);
+                CGPathAddLineToPoint(pathRef2, NULL, self.distanceLeftAndRight + self.spaceOfScales * i, self.rulerHeight - TOPANDHEIGHTRATIO * self.rulerHeight - textSize.height);
+                longest = self.rulerHeight - TOPANDHEIGHTRATIO * self.rulerHeight * 2 - textSize.height;
+                rule.frame = CGRectMake(self.distanceLeftAndRight + self.spaceOfScales * i - textSize.width / 2, self.rulerHeight - TOPANDHEIGHTRATIO * self.rulerHeight - textSize.height, 0, 0);
+                [rule sizeToFit];
+                [self addSubview:rule];
+            }
+            else if (i % 5 == 0) {
+                CGPathMoveToPoint(pathRef1, NULL, self.distanceLeftAndRight + self.spaceOfScales * i ,TOPANDHEIGHTRATIO * self.rulerHeight + longest * 0.5 * (1 - MEDIUMANDLONGESTRATIO));
+                CGPathAddLineToPoint(pathRef1, NULL, self.distanceLeftAndRight + self.spaceOfScales * i, TOPANDHEIGHTRATIO * self.rulerHeight + longest * 0.5 * (1 - MEDIUMANDLONGESTRATIO) + longest * MEDIUMANDLONGESTRATIO);
+            }
+            else
+            {
+                CGPathMoveToPoint(pathRef1, NULL, self.distanceLeftAndRight + self.spaceOfScales * i , TOPANDHEIGHTRATIO * self.rulerHeight + longest * 0.5 * (1 - SHORTESTANDLONGESTRATIO));
+                CGPathAddLineToPoint(pathRef1, NULL, self.distanceLeftAndRight + self.spaceOfScales * i, TOPANDHEIGHTRATIO * self.rulerHeight + longest * 0.5 * (1 - SHORTESTANDLONGESTRATIO) + longest * SHORTESTANDLONGESTRATIO);
+            }
+
+        }else if (self.type == TXHRulerScrollViewTypeInt){
             CGPathMoveToPoint(pathRef2, NULL, self.distanceLeftAndRight + self.spaceOfScales * i , TOPANDHEIGHTRATIO * self.rulerHeight);
             CGPathAddLineToPoint(pathRef2, NULL, self.distanceLeftAndRight + self.spaceOfScales * i, self.rulerHeight - TOPANDHEIGHTRATIO * self.rulerHeight - textSize.height);
             longest = self.rulerHeight - TOPANDHEIGHTRATIO * self.rulerHeight * 2 - textSize.height;
             rule.frame = CGRectMake(self.distanceLeftAndRight + self.spaceOfScales * i - textSize.width / 2, self.rulerHeight - TOPANDHEIGHTRATIO * self.rulerHeight - textSize.height, 0, 0);
             [rule sizeToFit];
             [self addSubview:rule];
-        }
-        else if (i % 5 == 0) {
-            CGPathMoveToPoint(pathRef1, NULL, self.distanceLeftAndRight + self.spaceOfScales * i ,TOPANDHEIGHTRATIO * self.rulerHeight + longest * 0.5 * (1 - MEDIUMANDLONGESTRATIO));
-            CGPathAddLineToPoint(pathRef1, NULL, self.distanceLeftAndRight + self.spaceOfScales * i, TOPANDHEIGHTRATIO * self.rulerHeight + longest * 0.5 * (1 - MEDIUMANDLONGESTRATIO) + longest * MEDIUMANDLONGESTRATIO);
-        }
-        else
-        {
-            CGPathMoveToPoint(pathRef1, NULL, self.distanceLeftAndRight + self.spaceOfScales * i , TOPANDHEIGHTRATIO * self.rulerHeight + longest * 0.5 * (1 - SHORTESTANDLONGESTRATIO));
-            CGPathAddLineToPoint(pathRef1, NULL, self.distanceLeftAndRight + self.spaceOfScales * i, TOPANDHEIGHTRATIO * self.rulerHeight + longest * 0.5 * (1 - SHORTESTANDLONGESTRATIO) + longest * SHORTESTANDLONGESTRATIO);
         }
     }
     

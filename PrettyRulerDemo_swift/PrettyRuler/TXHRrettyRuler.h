@@ -40,6 +40,6 @@
 - (void)showRulerScrollViewWithCount:(NSUInteger)count
                              average:(NSNumber *)average
                         currentValue:(CGFloat)currentValue
-                           smallMode:(BOOL)mode;
+                           smallMode:(BOOL)mode type:(TXHRulerScrollViewType)type;
 
 @end
